@@ -26,7 +26,7 @@ db.sequelize.sync();
 
 //simple route 
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to todo_list application."});
+    res.redirect("/todo");
 });
 
 require("./app/routes/todo.routes")(app);
